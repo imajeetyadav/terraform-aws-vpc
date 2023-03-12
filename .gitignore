@@ -7,3 +7,7 @@
 
 # Crash log files
 crash.log
+*.lock.hcl
+
+.DS_Store
+.vscode
