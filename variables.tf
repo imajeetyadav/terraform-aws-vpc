@@ -27,11 +27,6 @@ variable "map_public_ip_on_launch" {
   type        = bool
   default     = false
 }
-variable "name" {
-  description = "the name of your stack"
-  type        = string
-  default     = "sample-project"
-}
 
 variable "private_subnets" {
   description = "List of private subnets"

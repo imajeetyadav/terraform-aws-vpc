@@ -2,8 +2,8 @@ resource "aws_eip" "nat" {
   vpc = true
 
   tags = {
-    Name    = "${var.name}-eip"
-    Project = var.name
+    Name    = "${local.name}-eip"
+    Project = local.name
   }
 }
 
@@ -13,7 +13,8 @@ resource "aws_nat_gateway" "nat" {
   depends_on    = [aws_internet_gateway.igw]
 
   tags = {
-    Name    = "${var.name}-nat"
-    Project = var.name
+    Name    = "${local.name}-nat"
+    Project = local.name
+
   }
 }
