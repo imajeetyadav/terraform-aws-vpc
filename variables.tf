@@ -21,7 +21,6 @@ variable "private_subnets" {
 variable "public_subnets" {
   description = "List of public subnets"
   type        = list(any)
-
 }
 
 variable "region" {
