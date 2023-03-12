@@ -1,9 +1,8 @@
 resource "aws_internet_gateway" "igw" {
-  vpc_id = aws_vpc.vpc.id
+  vpc_id = aws_vpc.main.id
 
   tags = {
-    Name    = "${local.name}-igw"
-    Project = local.name
-    Owner   = local.owner
+    Name    = "${var.name}-igw"
+    Project = var.name
   }
 }
