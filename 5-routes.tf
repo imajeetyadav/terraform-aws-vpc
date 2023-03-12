@@ -7,7 +7,8 @@ resource "aws_route_table" "private" {
   }
 
   tags = {
-    Name = "${var.name}-routing-table-private"
+    Name    = "${var.name}-routing-table-private"
+    Project = var.name
   }
 }
 
@@ -19,7 +20,8 @@ resource "aws_route_table" "public" {
   }
 
   tags = {
-    Name = "${var.name}-routing-table-public"
+    Name    = "${var.name}-routing-table-public"
+    Project = var.name
   }
 }
 

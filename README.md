@@ -47,5 +47,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_id"></a> [id](#output\_id) | VPC id |
+| <a name="output_id"></a> [id](#output\_id) | The ID of the VPC |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
